@@ -9,17 +9,25 @@ ______
 
 Решение
 
-1. В каталоге /watchlog
-wathlog.service - Unit сервиса.
-watchlog.timer - Unit таймера.
-log -  Лог работы.
-2. В каталоге /spawn-fcgi
-spawn-fcgi.service - Unit сервиса.
-log - Лог работы.
-3. В каталоге /httpd
-httpd@.service - Unit сервиса.
-log - Лог работы.
-4. В каталоге /jira
-jira.service - Unit сервиса.
-log - Лог работы.
+1. В каталоге /watchlog/
 
+	wathlog.service - Unit сервиса.
+
+	watchlog.timer - Unit таймера.
+
+	log -  Лог работы.
+2. В каталоге /spawn-fcgi/
+
+	spawn-fcgi.service - Unit сервиса.
+	
+    log - Лог работы.
+3. В каталоге /httpd/
+
+	httpd@.service - Unit сервиса.
+
+	log - Лог работы.
+4. В каталоге /jira/
+
+	jira.service - Unit сервиса.
+	
+	log - Лог работы.
