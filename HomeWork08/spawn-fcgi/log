@@ -1,0 +1,41 @@
+[root@otuslinux vagrant]# systemctl status -l spawn-fcgi.service
+● spawn-fcgi.service - Spawn-fcgi startup service by Otus
+   Loaded: loaded (/etc/systemd/system/spawn-fcgi.service; disabled; vendor preset: disabled)
+   Active: active (running) since Sun 2019-03-03 18:26:26 UTC; 15s ago
+ Main PID: 23539 (php-cgi)
+   CGroup: /system.slice/spawn-fcgi.service
+           ├─23539 /usr/bin/php-cgi
+           ├─23540 /usr/bin/php-cgi
+           ├─23541 /usr/bin/php-cgi
+           ├─23542 /usr/bin/php-cgi
+           ├─23543 /usr/bin/php-cgi
+           ├─23544 /usr/bin/php-cgi
+           ├─23545 /usr/bin/php-cgi
+           ├─23546 /usr/bin/php-cgi
+           ├─23547 /usr/bin/php-cgi
+           ├─23548 /usr/bin/php-cgi
+           ├─23549 /usr/bin/php-cgi
+           ├─23550 /usr/bin/php-cgi
+           ├─23551 /usr/bin/php-cgi
+           ├─23552 /usr/bin/php-cgi
+           ├─23553 /usr/bin/php-cgi
+           ├─23554 /usr/bin/php-cgi
+           ├─23555 /usr/bin/php-cgi
+           ├─23556 /usr/bin/php-cgi
+           ├─23557 /usr/bin/php-cgi
+           ├─23558 /usr/bin/php-cgi
+           ├─23559 /usr/bin/php-cgi
+           ├─23560 /usr/bin/php-cgi
+           ├─23561 /usr/bin/php-cgi
+           ├─23562 /usr/bin/php-cgi
+           ├─23563 /usr/bin/php-cgi
+           ├─23564 /usr/bin/php-cgi
+           ├─23565 /usr/bin/php-cgi
+           ├─23566 /usr/bin/php-cgi
+           ├─23567 /usr/bin/php-cgi
+           ├─23568 /usr/bin/php-cgi
+           ├─23569 /usr/bin/php-cgi
+           ├─23570 /usr/bin/php-cgi
+           └─23571 /usr/bin/php-cgi
+
+Mar 03 18:26:26 otuslinux systemd[1]: Started Spawn-fcgi startup service by Otus.

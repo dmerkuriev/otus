@@ -1,0 +1,17 @@
+[root@otuslinux vagrant]# tail -f /var/log/messages
+Mar  3 18:16:55 otuslinux systemd: Started Run watchlog script every 30 second.
+Mar  3 18:17:00 otuslinux systemd: Starting My watchlog service...
+Mar  3 18:17:00 otuslinux root: Sun Mar  3 18:17:00 UTC 2019: I found word, Master!
+Mar  3 18:17:00 otuslinux systemd: Started My watchlog service.
+Mar  3 18:17:47 otuslinux systemd: Starting My watchlog service...
+Mar  3 18:17:47 otuslinux root: Sun Mar  3 18:17:47 UTC 2019: I found word, Master!
+Mar  3 18:17:47 otuslinux systemd: Started My watchlog service.
+Mar  3 18:18:47 otuslinux systemd: Starting My watchlog service...
+Mar  3 18:18:47 otuslinux root: Sun Mar  3 18:18:47 UTC 2019: I found word, Master!
+Mar  3 18:18:47 otuslinux systemd: Started My watchlog service.
+Mar  3 18:19:47 otuslinux systemd: Starting My watchlog service...
+Mar  3 18:19:47 otuslinux root: Sun Mar  3 18:19:47 UTC 2019: I found word, Master!
+Mar  3 18:19:47 otuslinux systemd: Started My watchlog service.
+Mar  3 18:20:47 otuslinux systemd: Starting My watchlog service...
+Mar  3 18:20:47 otuslinux root: Sun Mar  3 18:20:47 UTC 2019: I found word, Master!
+Mar  3 18:20:47 otuslinux systemd: Started My watchlog service.
