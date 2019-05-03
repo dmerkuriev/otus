@@ -1,0 +1,21 @@
+*list jobs
++-------+-------------------+--------+---------------------+------+-------+----------+------------+-----------+
+| JobId | Name              | Client | StartTime           | Type | Level | JobFiles | JobBytes   | JobStatus |
++-------+-------------------+--------+---------------------+------+-------+----------+------------+-----------+
+|     1 | client-etc-backup | client | 2019-03-17 19:00:02 | B    | F     |        0 |          0 | f         |
+|     2 | client-etc-backup | client | 2019-03-17 19:01:46 | B    | F     |        0 |          0 | f         |
+|     3 | client-etc-backup | client | 2019-03-17 19:03:02 | B    | F     |        0 |          0 | f         |
+|     4 | client-etc-backup | client | 2019-03-17 19:04:44 | B    | F     |    2,422 | 13,447,275 | T         |
+|     5 | client-etc-backup | client | 2019-03-17 19:10:02 | B    | I     |        2 |      3,209 | T         |
+|     6 | client-etc-backup | client | 2019-03-17 19:20:02 | B    | I     |       40 |     60,016 | T         |
+|     7 | client-etc-backup | client | 2019-03-17 19:30:02 | B    | D     |       41 |     63,170 | T         |
+|     8 | client-etc-backup | client | 2019-03-17 19:40:02 | B    | I     |        0 |          0 | T         |
+|     9 | client-etc-backup | client | 2019-03-17 19:50:02 | B    | I     |       64 |     41,784 | T         |
+|    10 | client-etc-backup | client | 2019-03-17 20:00:03 | B    | D     |       94 |     90,417 | T         |
+|    11 | client-etc-backup | client | 2019-03-17 20:10:03 | B    | I     |        0 |          0 | T         |
+|    12 | client-etc-backup | client | 2019-03-17 20:20:03 | B    | I     |        0 |          0 | T         |
+|    13 | client-etc-backup | client | 2019-03-17 20:30:03 | B    | D     |       94 |     90,417 | T         |
+|    14 | client-etc-backup | client | 2019-03-17 20:40:03 | B    | I     |        0 |          0 | T         |
+|    15 | client-etc-backup | client | 2019-03-17 20:50:03 | B    | I     |        0 |          0 | T         |
++-------+-------------------+--------+---------------------+------+-------+----------+------------+-----------+
+*

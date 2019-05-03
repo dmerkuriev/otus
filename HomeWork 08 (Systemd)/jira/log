@@ -1,0 +1,20 @@
+[root@otuslinux vagrant]# systemctl status jira
+● jira.service - Jira Service
+   Loaded: loaded (/etc/systemd/system/jira.service; disabled; vendor preset: disabled)
+   Active: active (running) since Sun 2019-03-03 17:53:15 UTC; 40min ago
+  Process: 23186 ExecStart=/opt/atlassian/jira/bin/start-jira.sh (code=exited, status=0/SUCCESS)
+ Main PID: 23218 (java)
+   CGroup: /system.slice/jira.service
+           └─23218 /opt/atlassian/jira/jre//bin/java -Djava.util.logging.config.file=/opt/atlassian/jira/conf/logging.properties -Djava.util.logging.manager=org.apache.ju...
+
+Mar 03 17:53:15 otuslinux start-jira.sh[23186]: MMMMMM    `UOJ
+Mar 03 17:53:15 otuslinux start-jira.sh[23186]: MMMMMM
+Mar 03 17:53:15 otuslinux start-jira.sh[23186]: +MMMMM
+Mar 03 17:53:15 otuslinux start-jira.sh[23186]: MMMMM
+Mar 03 17:53:15 otuslinux start-jira.sh[23186]: `UOJ
+Mar 03 17:53:15 otuslinux start-jira.sh[23186]: Atlassian Jira
+Mar 03 17:53:15 otuslinux start-jira.sh[23186]: Version : 8.0.0
+Mar 03 17:53:15 otuslinux start-jira.sh[23186]: If you encounter issues starting or stopping JIRA, please see the Troubleshooting guide at https://docs.atlassia...stallation
+Mar 03 17:53:15 otuslinux start-jira.sh[23186]: Server startup logs are located in /opt/atlassian/jira/logs/catalina.out
+Mar 03 17:53:15 otuslinux systemd[1]: Started Jira Service.
+Hint: Some lines were ellipsized, use -l to show in full.
