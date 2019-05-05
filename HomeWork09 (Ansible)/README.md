@@ -21,7 +21,7 @@ ______
 Написана роль, которая разворачивает nginx слушающий 8080 порт.
 
 Для запуска стенда необходимо выполнить следующие команды:  
-    $ vagrant up  
-    $ ansible-playbook nginx.yml  
-    $ curl http://192.168.11.150:8080  
+	$ vagrant up  
+	$ ansible-playbook nginx.yml  
+	$ curl http://192.168.11.150:8080  
 
