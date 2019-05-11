@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+    nginx:
+      image: dmerkuriev/nginx:02
+      ports:
+        - 80:80
+      volumes:
+        - ./www:/usr/share/nginx/html
+        - ./logs:/var/log/nginx
+      networks:
+        - www_net
+
+    php:
+      image: dmerkuriev/fpm:02
+      ports:
+        - 9000:9000
+      volumes:
+        - ./www:/usr/share/nginx/html
+      networks:
+        - www_net
+
+networks:
+  www_net:
+    driver: bridge
+
