@@ -1,0 +1,45 @@
+home = ENV['HOME']
+ENV["LC_ALL"] = "en_US.UTF-8"
+ 
+Vagrant.configure(2) do |config|
+
+    config.vm.box = "centos/7"
+    config.vm.provider "virtualbox" do |vb|
+      vb.memory = 4096
+    end
+
+    config.vm.define "ipa-srv" do |box|
+        
+        box.vm.hostname = "ipa-srv"
+        box.vm.network :private_network, ip: "192.168.11.101"
+        box.vm.provision "shell", inline: <<-SHELL
+        mkdir -p ~root/.ssh
+        cp ~vagrant/.ssh/auth* ~root/.ssh
+        hostnamectl set-hostname ipa-srv.otus.loc
+        yum -y update
+        echo "192.168.11.102 ipa-client.otus.loc ipa-client" >> /etc/hosts
+        SHELL
+        
+        box.vm.provision "ansible" do |ansible|
+            ansible.playbook = "playbooks/ipa-server.yml"
+        end
+    end
+
+    config.vm.define "ipa-client" do |box|
+        box.vm.hostname = "ipa-client"
+        box.vm.network :private_network, ip: "192.168.11.102"
+        box.vm.provision "shell", inline: <<-SHELL
+        mkdir -p ~root/.ssh
+        cp ~vagrant/.ssh/auth* ~root/.ssh
+        hostnamectl set-hostname ipa-client.otus.loc
+        yum -y update
+        echo "192.168.11.101 ipa-srv.otus.loc ipa-srv" >> /etc/hosts
+        echo "192.168.11.102 ipa-client.otus.loc ipa-client" >> /etc/hosts
+        SHELL
+
+        box.vm.provision "ansible" do |ansible|
+            ansible.playbook = "playbooks/ipa-client.yml"
+        end
+    end
+end
+

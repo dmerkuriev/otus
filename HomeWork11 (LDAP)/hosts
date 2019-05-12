@@ -1,0 +1,4 @@
+[freeipa]
+ipa-srv ansible_host=127.0.0.1 ansible_port=2200 ansible_private_key_file=.vagrant/machines/ipa-srv/virtualbox/private_key
+ipa-client ansible_host=127.0.0.1 ansible_port=2201 ansible_private_key_file=.vagrant/machines/ipa-client/virtualbox/private_key
+
