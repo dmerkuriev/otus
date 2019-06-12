@@ -1,0 +1,39 @@
+Return-Path: <dm@aaa.bbb>
+Delivered-To: dmerkurev@yyy.zzz
+Received: from localhost (localhost [127.0.0.1])
+	by mail.yyy.zzz (Postfix) with ESMTP id 17C501ECA65
+	for <dmerkurev@yyy.zzz>; Wed, 12 Jun 2019 20:08:00 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at yyy.zzz
+Received: from mail.yyy.zzz ([127.0.0.1])
+	by localhost (mail.yyy.zzz [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id O_OCV9jx5oti for <dmerkurev@yyy.zzz>;
+	Wed, 12 Jun 2019 20:07:54 +0300 (MSK)
+Received: from forward101p.mail.yandex.net (forward101p.mail.yandex.net [77.88.28.101])
+	(using TLSv1.2 with cipher ADH-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.yyy.zzz (Postfix) with ESMTPS id 4E6E81EC8FA
+	for <dmerkurev@yyy.zzz>; Wed, 12 Jun 2019 20:07:54 +0300 (MSK)
+Received: from mxback2o.mail.yandex.net (mxback2o.mail.yandex.net [IPv6:2a02:6b8:0:1a2d::1c])
+	by forward101p.mail.yandex.net (Yandex) with ESMTP id 0E7DA3280438
+	for <dmerkurev@yyy.zzz>; Wed, 12 Jun 2019 20:07:54 +0300 (MSK)
+Received: from smtp4j.mail.yandex.net (smtp4j.mail.yandex.net [2a02:6b8:0:1619::15:6])
+	by mxback2o.mail.yandex.net (nwsmtp/Yandex) with ESMTP id ePDNaNathx-7r4Sj9Tp;
+	Wed, 12 Jun 2019 20:07:53 +0300
+Received: by smtp4j.mail.yandex.net (nwsmtp/Yandex) with ESMTPSA id LeaoxrgfQT-7rS4XtKc;
+	Wed, 12 Jun 2019 20:07:53 +0300
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(Client certificate not present)
+From: =?utf-8?B?0JTQvNC40YLRgNC40Lkg0JzQtdGA0LrRg9GA0YzQtdCy?= <dm@aaa.bbb>
+Content-Type: text/plain;
+	charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Mime-Version: 1.0 (Mac OS X Mail 12.4 \(3445.104.11\))
+Subject: Test mail
+Message-Id: <D052CF9C-ABEE-4894-92E8-BB1A79879AD9@aaa.bbb>
+Date: Wed, 12 Jun 2019 20:07:52 +0300
+To: =?utf-8?B?0JTQvNC40YLRgNC40Lkg0JzQtdGA0LrRg9GA0YzQtdCy?= <dmerkurev@yyy.zzz>
+X-Mailer: Apple Mail (2.3445.104.11)
+
+This is test emal!
+
+

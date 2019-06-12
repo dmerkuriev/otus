@@ -1,0 +1,12 @@
+# postgrey whitelist for mail client hostnames
+# --------------------------------------------
+# put this file in /etc/postfix or specify its path
+# with --whitelist-clients=xxx
+#
+# postgrey version: 1.34, build date: 2011-05-04
+
+mail.ru
+list.ru
+outbound.protection.outlook.com
+yandex.ru
+gmail.com

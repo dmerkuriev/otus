@@ -1,0 +1,14 @@
+[root@mail ~]# cat /var/log/maillog | grep 17C501ECA65
+Jun 12 20:08:00 mail postfix/smtpd[5149]: input attribute value: 17C501ECA65
+Jun 12 20:08:00 mail postfix/smtpd[5149]: 17C501ECA65: client=localhost[127.0.0.1]
+Jun 12 20:08:00 mail postfix/cleanup[5138]: 17C501ECA65: message-id=<D052CF9C-ABEE-4894-92E8-BB1A79879AD9@aaa.bbb>
+Jun 12 20:08:00 mail postfix/qmgr[28318]: 17C501ECA65: from=<dm@aaa.bbb>, size=1909, nrcpt=1 (queue active)
+Jun 12 20:08:00 mail postfix/smtpd[5149]: > localhost[127.0.0.1]: 250 2.0.0 Ok: queued as 17C501ECA65
+Jun 12 20:08:00 mail amavis[18980]: (18980-18) smtp resp to data-dot (<dmerkurev@yyy.zzz>): 250 2.0.0 Ok: queued as 17C501ECA65, dt: 241.1 ms
+Jun 12 20:08:00 mail amavis[18980]: (18980-18) O_OCV9jx5oti FWD from <dm@aaa.bbb> -> <dmerkurev@yyy.zzz>, BODY=7BIT 250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 17C501ECA65
+Jun 12 20:08:00 mail amavis[18980]: (18980-18) Passed CLEAN {RelayedInternal}, MYNETS LOCAL [77.88.28.101]:47672 [77.88.28.101] <dm@aaa.bbb> -> <dmerkurev@yyy.zzz>, Message-ID: <D052CF9C-ABEE-4894-92E8-BB1A79879AD9@aaa.bbb>, mail_id: O_OCV9jx5oti, Hits: -1.935, size: 1477, queued_as: 17C501ECA65, 5837 ms
+Jun 12 20:08:00 mail amavis[18980]: (18980-18) LMTP response for <dmerkurev@yyy.zzz>: "250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 17C501ECA65"
+Jun 12 20:08:00 mail postfix/lmtp[5140]: < 127.0.0.1[127.0.0.1]:10024: 250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 17C501ECA65
+Jun 12 20:08:00 mail postfix/lmtp[5140]: 4E6E81EC8FA: to=<dmerkurev@yyy.zzz>, relay=127.0.0.1[127.0.0.1]:10024, delay=6.1, delays=0.26/0.01/0/5.8, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 17C501ECA65)
+Jun 12 20:08:00 mail postfix/pipe[5150]: 17C501ECA65: to=<dmerkurev@yyy.zzz>, relay=dovecot, delay=0.67, delays=0.24/0.01/0/0.42, dsn=2.0.0, status=sent (delivered via dovecot service)
+Jun 12 20:08:00 mail postfix/qmgr[28318]: 17C501ECA65: removed
